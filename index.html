@@ -5,6 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="form-div">
+      <h1>Sign Up</h1>
+      <form action="">
+        <input type="text" placeholder="First Name" name="firstName" />
+        <input type="text" placeholder="Last Name" name="lastName" />
+        <input
+          type="text"
+          placeholder="Mobile No."
+          id="mobileNumber"
+          name="mobileNumber"
+        />
+        <input
+          type="text"
+          placeholder="Email Address"
+          id="emailAddress"
+          name="email"
+        />
+        <input type="password" placeholder="Password" name="password1" />
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          name="password2"
+        />
+        <div class="bottom-content">
+          <input type="checkbox" name="agree" value="agree" />
+          <label for="agree"><strong>I Agree</strong></label>
+          <div class="terms">
+            <p>
+              By clicking
+              <span class="register-span"><strong>Register</strong></span
+              >, you agree to the <a href="#">Terms and Conditions</a> set out
+              by this site, including our Cookie Use.
+            </p>
+          </div>
+        </div>
+        <button class="register"><strong>Register</strong></button>
+        <button class="sign-in"><strong>Sign In</strong></button>
+      </form>
+    </div>
+  </body>
 </html>
