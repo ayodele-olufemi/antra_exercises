@@ -136,3 +136,10 @@ main {
 .blog-preview {
   margin-bottom: 20px;
 }
+
+/* work on responsiveness */
+@media screen and (max-width: 599px) {
+  nav ul {
+    display: none;
+  }
+}
