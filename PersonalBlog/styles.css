@@ -97,7 +97,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 .blog-item {
   background: rgb(226, 147, 21);
@@ -135,11 +135,49 @@ main {
 
 .blog-preview {
   margin-bottom: 20px;
+  height: 55px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* work on responsiveness */
 @media screen and (max-width: 599px) {
+  .blog-name {
+    font-size: 2rem;
+  }
+  .top-nav,
+  .footer-content {
+    width: 90%;
+  }
   nav ul {
     display: none;
+  }
+
+  main {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .welcome {
+    margin: 5px;
+  }
+
+  main > h1 {
+    font-size: 2rem;
+  }
+
+  .blog-row {
+    flex-direction: column;
+  }
+
+  .blog-item {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .blog-preview {
+    height: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
