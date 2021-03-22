@@ -131,8 +131,23 @@ main {
 .blog-aside-left,
 .blog-aside-right {
   width: 20%;
-  min-height: 100vh;
-  background-color: green;
+  height: 100vh;
+  background-color: rgb(247, 247, 159);
+  color: black;
+  padding: 5px;
+  flex: 1;
+}
+
+.blog-aside-right h3 {
+  color: blue;
+  text-align: center;
+}
+
+.author-avatar {
+  width: 50%;
+  margin: auto;
+  display: block;
+  padding: 5px;
 }
 
 .blog-aside-left {
@@ -141,6 +156,12 @@ main {
 
 .blog-aside-right {
   float: right;
+}
+
+figure > * {
+  margin: 10px auto 0.55em;
+  display: block;
+  text-align: center;
 }
 
 .blog-main {
