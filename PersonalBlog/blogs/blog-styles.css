@@ -122,35 +122,53 @@ main {
   z-index: 1;
 }
 
-.blog-row {
+.blog-div {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
+  position: relative;
+  margin-top: 20px;
 }
-.blog-item {
-  background: white;
-  width: 48%;
-  border-radius: 0.7rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+.blog-aside-left,
+.blog-aside-right {
+  width: 20%;
+  min-height: 100vh;
+  background-color: green;
+}
+
+.blog-aside-left {
+  float: left;
+}
+
+.blog-aside-right {
+  float: right;
+}
+
+.blog-main {
+  width: 50%;
+  float: left;
+  margin: 0 5%;
+  font-size: 2rem;
+  line-height: 2;
+  font-weight: lighter;
+  position: relative;
+}
+
+hr {
+  width: 20%;
+  margin: auto;
+  border: none;
+  border-top: red dotted 5px;
+  border-width: 10px;
+}
+
+.quotes {
+  width: 80%;
+  margin: auto;
+  line-height: 1.5;
+  background-color: white;
   color: black;
   padding: 10px;
-  position: relative;
-}
-
-.blog-item:hover {
-  background-color: gold;
-}
-
-.blog-content {
-  position: relative;
-}
-
-.blog-image {
-  max-width: 30%;
-  object-fit: cover;
-  float: left;
+  font-family: cursive;
 }
 
 .share {
@@ -160,33 +178,6 @@ main {
   right: 0;
 }
 
-.blog-preview {
-  margin-bottom: 10px;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 65%;
-  float: right;
-}
-
-.blog-link {
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  right: 5px;
-}
-
-.welcome {
-  margin: 10px;
-}
-
-.welcome-text {
-  margin: 10px;
-  margin-bottom: 10px;
-}
-
 .blog-date {
   color: rgb(65, 56, 56);
   margin-bottom: 20px;
@@ -194,7 +185,9 @@ main {
 
 .blog-title {
   margin-top: 10px;
-  color: green;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
 }
 
 /* work on responsiveness */

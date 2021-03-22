@@ -20,6 +20,18 @@
   <body>
     <div class="top-div">
       <nav class="top-nav">
+        <h1 class="blog-name"><a href="index.html">Ayodele's Corner</a></h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="subscribe">Subscribe</button>
+      </nav>
+    </div>
+
+    <div class="stud-div">
+      <nav class="stud-nav">
         <h1 class="blog-name">Ayodele's Corner</h1>
         <ul>
           <li><a href="#">Home</a></li>
@@ -29,6 +41,7 @@
         <button class="subscribe">Subscribe</button>
       </nav>
     </div>
+
     <main>
       <h1 class="welcome">
         Welcome to <span class="blog-name">Ayodele's Corner</span>.
@@ -36,18 +49,25 @@
       <p class="welcome-text">Pick a blog for your reading pleasure.</p>
       <div class="blog-row">
         <div class="blog-item">
+          <input type="image" class="share" src="./images/share.png" />
           <h2 class="blog-title">Antra welcomes new canditates</h2>
+          <p class="blog-author"><em>Author:</em> Ayodele Olufemi</p>
           <p class="blog-date">Mar 19</p>
-          <p class="blog-preview">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit,
-            earum quibusdam voluptate reprehenderit dignissimos, quas ipsa,
-            deserunt incidunt debitis dicta quis pariatur quaerat harum
-            voluptatum modi quo tempore illum ipsum? Qui tenetur fugit
-            perspiciatis, delectus possimus quibusdam sequi cum fugiat debitis
-            saepe vero dicta odit non, nisi vel sint fuga quaerat! Aut
-            repudiandae debitis eaque dolor natus sint numquam maiores!
-          </p>
-          <a href="#">Continue reading</a>
+          <div class="blog-content">
+            <img class="blog-image" src="./images/antra.png" alt="antra-logo" />
+            <p class="blog-preview">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Suscipit, earum quibusdam voluptate reprehenderit dignissimos,
+              quas ipsa, deserunt incidunt debitis dicta quis pariatur quaerat
+              harum voluptatum modi quo tempore illum ipsum? Qui tenetur fugit
+              perspiciatis, delectus possimus quibusdam sequi cum fugiat debitis
+              saepe vero dicta odit non, nisi vel sint fuga quaerat! Aut
+              repudiandae debitis eaque dolor natus sint numquam maiores!
+            </p>
+          </div>
+          <a class="blog-link" href="./blogs/antra-blog.html"
+            >&#10142; Continue reading</a
+          >
         </div>
         <div class="blog-item">
           <h2 class="blog-title">Latest news on Covid Vaccine</h2>
@@ -246,6 +266,7 @@
           <a href="#">Continue reading</a>
         </div>
       </div>
+      <div class="stud-footer"></div>
     </main>
 
     <footer>
