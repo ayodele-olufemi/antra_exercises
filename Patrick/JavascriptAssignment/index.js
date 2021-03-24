@@ -23,6 +23,9 @@ function reverseNumber(numToReverse) {
 // Example string : 'webmaster' 
 // Expected Output : 'abeemrstw'
 // Assume punctuation and numbers symbols are not included in the passed string.
+function alphaOrder(stringToOrder) {
+   return stringToOrder.split("").sort().join("");
+}
 
 
 
@@ -30,7 +33,13 @@ function reverseNumber(numToReverse) {
 // Example string : 'the quick brown fox' 
 // Expected Output : 'The Quick Brown Fox '
 
-
+function capString(stringToCapitalize) {
+    let stringArray = stringToCapitalize.split(" ");
+    for (let i = 0; i < stringArray.length; i++) {
+        stringArray[i] = stringArray[i][0].toUpperCase() + stringArray[i].slice(1);
+    }
+    return stringArray.join(" ");
+}
 
 // 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. 
 // Example string : 'Web Development Tutorial' 
