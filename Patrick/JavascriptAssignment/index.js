@@ -72,6 +72,26 @@ function capString(stringToCapitalize) {
 // Sample function : amountTocoins(46, [25, 10, 5, 2, 1])
 // Here 46 is the amount. and 25, 10, 5, 2, 1 are coins. 
 // Output : 25, 10, 10, 1
+function convertToCoins(amount) {
+    let result = [];
+    while (amount >= 25) {
+        result.push(25);
+        amount -= 25;
+    }
+    while (amount >= 10) {
+        result.push(10);
+        amount -= 10;
+    }
+    while (amount >= 5) {
+        result.push(5);
+        amount -= 5;
+    }
+    while (amount >= 1) {
+        result.push(1);
+        amount -= 1;
+    }
+    return result;
+}
 
 // 15. Write a JavaScript function to compute the value of bn where n is the exponent and b is the bases. Accept b and n from the user and display the result. 
 
