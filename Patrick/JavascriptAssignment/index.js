@@ -100,6 +100,18 @@ function convertToCoins(amount) {
 // Expected Output : "thequickbrownfxjmpsvlazydg"
 
 // 17. Write a JavaScript function to  get the number of occurrences of each letter in specified string. 
+function numberOfOccurences(specifiedString) {
+    let stringNoSpace = specifiedString.split(" ").join("").toLowerCase();
+    let resultMap = new Map();
+    for (let i = 0; i < stringNoSpace.length; i++) {
+        if (!resultMap.has(stringNoSpace[i])) {
+            resultMap.set(stringNoSpace[i], 1)
+        } else {
+            resultMap.set(stringNoSpace[i], resultMap.get(stringNoSpace[i]) + 1);
+        }
+    }
+    return resultMap;
+}
 
 // 18. Write a function for searching JavaScript arrays with a binary search. 
 // Note : A binary search searches by splitting an array into smaller and smaller chunks until it finds the desired value.
