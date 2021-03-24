@@ -2,11 +2,14 @@
 // 1. Write a JavaScript function that reverse a number. 
 // Example x = 32243;
 // Expected Output : 34223 
-
-
-
-
-
+function reverseNumber(numToReverse) {
+    let stringNum = numToReverse.toString();
+    let result = "";
+    for (let i = stringNum.length - 1; i >= 0; i--) {
+        result += stringNum[i];
+    }
+    return Number(result);
+}
 
 
 // 2. Write a JavaScript function that checks whether a passed string is palindrome or not? 
@@ -21,9 +24,13 @@
 // Expected Output : 'abeemrstw'
 // Assume punctuation and numbers symbols are not included in the passed string.
 
+
+
 // 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. 
 // Example string : 'the quick brown fox' 
 // Expected Output : 'The Quick Brown Fox '
+
+
 
 // 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. 
 // Example string : 'Web Development Tutorial' 
