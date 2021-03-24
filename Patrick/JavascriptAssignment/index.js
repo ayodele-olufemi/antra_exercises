@@ -142,6 +142,16 @@ function numberOfOccurences(specifiedString) {
 // Sample function : Longest_Country_Name(["Australia", "Germany", "United States of America"])
 // Expected output : "United States of America"
 
+function longesCountryName(countryNameList) {
+    let lengthObject = {}
+    for (let i = 0; i < countryNameList.length; i++) {
+        lengthObject[countryNameList[i]] = Number(countryNameList[i].length);
+    }
+    let values = Object.values(lengthObject);
+    let longestValue = Math.max(...values);
+    return Object.keys(lengthObject).find(key => lengthObject[key] === longestValue);
+}
+
 // 26. Write a JavaScript function to find longest substring in a given a string without repeating characters. 
 
 // 27. Write a JavaScript function that returns the longest palindrome in a given string. 
