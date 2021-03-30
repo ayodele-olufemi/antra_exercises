@@ -5,13 +5,17 @@ let artistName = "";
 let searchBar = document.querySelector('.searchBar');
 let searchResults = document.querySelector('.searchResults');
 let mainText = document.querySelector('.mainText');
+let searchIcon = document.querySelector('.fa-search');
 
 searchBar.addEventListener('focus', function(){
     searchBar.style.width = "60%";
+    searchIcon.style.right = "21%";
+
 })
 
 searchBar.addEventListener('blur', function(){
     searchBar.style.width = "40%";
+    searchIcon.style.right = "31%";
 })
 
 searchBar.addEventListener('keypress', findResults);
