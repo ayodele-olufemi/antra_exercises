@@ -30,6 +30,13 @@ body {
   border-radius: 2rem;
 }
 
+.fa-search {
+  position: absolute;
+  top: 28px;
+  right: 31%;
+  font-size: 15px;
+}
+
 .header {
   width: 70%;
   margin: auto;
