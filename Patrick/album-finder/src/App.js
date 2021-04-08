@@ -1,19 +1,27 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Albums from "./components/Albums";
 
 const App = () => {
+	useEffect(() => {
+		searchArtist(localStorage.getItem(1));
+		// eslint-disable-next-line
+	}, []);
+
 	const [albums, setAlbums] = useState([]);
+
 	const [topText, setTopText] = useState("Search Albums by ArtistName:");
 
 	const searchArtist = async (text) => {
 		const res = await axios.get(
 			`https://itunes.apple.com/search?term=${text}&media=music&entity=album&attribute=artistTerm&limit=500`
 		);
-		// setAlbums(res.results);
-		setTopText(`${res.data.results.length} results for ${text}`);
+
+		text !== ""
+			? setTopText(`${res.data.results.length} results for ${text}`)
+			: setTopText("Search Albums by ArtistName:");
 		setAlbums(res.data.results);
 	};
 
