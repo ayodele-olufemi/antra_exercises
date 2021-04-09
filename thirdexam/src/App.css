@@ -1,7 +1,17 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .App {
 	min-height: 100vh;
 	background-color: rgb(26, 23, 23);
 	font-family: "Satisfy", cursive;
+	margin: 0;
+	padding: 0;
 }
 
 .header-text {
@@ -13,9 +23,17 @@
 .newsBody {
 	width: 70%;
 	min-height: 100vh;
-	margin: 0 auto;
-	position: relative;
+	margin: auto;
 	background-color: white;
+	border: 2px red solid;
+	display: flex;
+}
+
+.newsHeader {
+	width: 70%;
+	margin: auto;
+	background-color: white;
+	text-align: center;
 }
 
 .card {

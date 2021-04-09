@@ -43,8 +43,11 @@ function App() {
 	// };
 	return (
 		<div className="App">
-			<div className="newsBody">
+			<div className="newsHeader">
 				<HeaderText />
+			</div>
+
+			<div className="newsBody">
 				{allNews.map((news) => (
 					<NewsItem key={news.id} news={news} />
 				))}
