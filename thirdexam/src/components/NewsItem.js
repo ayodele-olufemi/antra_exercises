@@ -15,13 +15,15 @@ const NewsItem = ({ news }) => {
 	const clickHandler = (e) => {
 		console.log(e);
 		e.view.document.querySelector("h1").style.color = news.color;
+		console.log(e.target.className);
+		e.target.parentNode.style.border = `${news.color} 2px solid`;
 	};
 
 	return (
-		<div className="card">
+		<div className="card" id={news.id}>
 			<h2>{news.title}</h2>
 			<p>{news.body}</p>
-			<button style={buttonStyle} onClick={clickHandler}>
+			<button className={news.id} style={buttonStyle} onClick={clickHandler}>
 				Set {news.color}
 			</button>
 		</div>
