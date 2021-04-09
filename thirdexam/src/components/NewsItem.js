@@ -4,18 +4,16 @@ import PropTypes from "prop-types";
 const NewsItem = ({ news }) => {
 	const buttonStyle = {
 		backgroundColor: `${news.color}`,
-		width: "20%",
-		padding: "10px",
+		padding: "20px 40px",
 		color: "white",
 		fontFamily: "'Satisfy', cursive",
-		borderRadius: "1rem",
+		borderRadius: "0.3rem",
 		outline: "none",
+		border: "none",
 	};
 
 	const clickHandler = (e) => {
-		console.log(e);
 		e.view.document.querySelector("h1").style.color = news.color;
-		console.log(e.target.className);
 		e.target.parentNode.style.border = `${news.color} 2px solid`;
 		e.target.parentNode.style.boxShadow = `3px 3px 0 1px ${news.color}`;
 	};

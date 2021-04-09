@@ -14,19 +14,14 @@
 	padding: 0;
 }
 
-.header-text {
-}
-
-.buttonStyle {
-}
-
 .newsBody {
 	width: 70%;
 	min-height: 100vh;
 	margin: auto;
 	background-color: white;
-	border: 2px red solid;
-	display: flex;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: repeat(3, 1fr);
 }
 
 .newsHeader {
@@ -37,44 +32,31 @@
 }
 
 .card {
-	width: 50%;
-	padding: 5px;
-	margin: 5px;
-	border-radius: 2rem;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 1rem;
 }
 
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+	margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media screen and (max-width: 415px) {
+	.newsBody {
+		grid-template-columns: auto;
+	}
 
-.App-link {
-  color: #61dafb;
-}
+	h1,
+	h2 {
+		font-size: medium;
+	}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+	p {
+		font-size: small;
+	}
+}
