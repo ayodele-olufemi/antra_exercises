@@ -12,6 +12,12 @@ const NewsItem = ({ news }) => {
 		border: "none",
 	};
 
+	let OSName = "Unknown OS";
+	if (navigator.appVersion.indexOf("Win") !== -1) OSName = "Windows";
+	if (navigator.appVersion.indexOf("Mac") !== -1) OSName = "MacOS";
+	if (navigator.appVersion.indexOf("X11") !== -1) OSName = "UNIX";
+	if (navigator.appVersion.indexOf("Linux") !== -1) OSName = "Linux";
+
 	const clickHandler = (e) => {
 		e.view.document.querySelector("h1").style.color = news.color;
 		e.target.parentNode.style.border = `${news.color} 2px solid`;
@@ -23,15 +29,24 @@ const NewsItem = ({ news }) => {
 		e.target.parentNode.style.boxShadow = "none";
 	};
 
+	const blurHandler2 = (e) => {
+		if (OSName === "MacOS") {
+			e.target.parentNode.style.border = "none";
+			e.target.parentNode.style.boxShadow = "none";
+		}
+	};
+
 	return (
 		<div className="card" id={news.id}>
 			<h2>{news.title}</h2>
 			<p>{news.body}</p>
 			<button
+				id="btn"
 				className={news.id}
 				style={buttonStyle}
 				onClick={clickHandler}
 				onBlur={blurHandler}
+				onMouseOut={blurHandler2}
 			>
 				Set {news.color}
 			</button>

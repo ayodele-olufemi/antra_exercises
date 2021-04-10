@@ -59,4 +59,9 @@ p {
 	p {
 		font-size: small;
 	}
+
+	.newsBody,
+	.newsHeader {
+		width: 100%;
+	}
 }

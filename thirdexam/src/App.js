@@ -1,6 +1,5 @@
 import "./App.css";
 import React from "react";
-import { useEffect } from "react";
 import HeaderText from "./components/HeaderText";
 import NewsItem from "./components/NewsItem";
 
