@@ -32,8 +32,8 @@ const NewsItem = ({ news }) => {
 
 	const blurHandler2 = (e) => {
 		if (OSName === "MacOS") {
-			e.target.parentNode.style.border = "none";
-			e.target.parentNode.style.boxShadow = "none";
+			e.target.parentNode.style.border = "white 2px solid";
+			e.target.parentNode.style.boxShadow = "3px 3px 0 1px white";
 		}
 	};
 

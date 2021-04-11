@@ -31,8 +31,6 @@
 	grid-template-columns: 45% 45%;
 	grid-auto-rows: max-content;
 	justify-content: space-around;
-
-	/* grid-template-rows: repeat(3, 1fr); */
 }
 
 .card {
@@ -54,7 +52,7 @@ p {
 
 @media screen and (max-width: 600px) {
 	.newsBody {
-		grid-template-columns: auto;
+		grid-template-columns: 90%;
 	}
 
 	h1,
@@ -72,11 +70,7 @@ p {
 	}
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
-	.newsBody {
-		grid-template-columns: auto auto;
-	}
-
+@media screen and (min-width: 600px) and (max-width: 1024px) {
 	h1,
 	h2 {
 		font-size: medium;
