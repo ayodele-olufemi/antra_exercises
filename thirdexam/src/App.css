@@ -65,3 +65,23 @@ p {
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.newsBody {
+		grid-template-columns: auto auto;
+	}
+
+	h1,
+	h2 {
+		font-size: medium;
+	}
+
+	p {
+		font-size: small;
+	}
+
+	.newsBody,
+	.newsHeader {
+		width: 100%;
+	}
+}
