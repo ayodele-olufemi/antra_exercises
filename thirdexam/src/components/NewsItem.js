@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const NewsItem = ({ news }) => {
 	const buttonStyle = {
 		backgroundColor: `${news.color}`,
+		fontWeight: "bold",
 		padding: "20px 40px",
 		color: "white",
 		fontFamily: "'Satisfy', cursive",
@@ -25,8 +26,8 @@ const NewsItem = ({ news }) => {
 	};
 
 	const blurHandler = (e) => {
-		e.target.parentNode.style.border = "none";
-		e.target.parentNode.style.boxShadow = "none";
+		e.target.parentNode.style.border = "white 2px solid";
+		e.target.parentNode.style.boxShadow = "3px 3px 0 1px white";
 	};
 
 	const blurHandler2 = (e) => {
